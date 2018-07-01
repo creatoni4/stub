@@ -1,2 +1,2 @@
 cls
-Get-ADComputer -Filter {OperatingSystem -Like "Windows Server*"} -Property * -Server "eu-dc-03.abbyyeu.local" | Select-Object Name,OperatingSystem,OperatingSystemServicePack | Export-Csv -path ".\test2.csv"
+Get-ADComputer -Filter {OperatingSystem -Like "Windows Server*"} -Property * -Server "nameofdc" | Select-Object Name,OperatingSystem,OperatingSystemServicePack | Export-Csv -path ".\test2.csv"
